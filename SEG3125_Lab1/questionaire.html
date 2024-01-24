@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Questionaire for Doki Doki Literature Club</title> <link rel="stylesheet" href="myStyle.css"></head>
+	<body>
+		<div>
+		<h4>A little bit about the game</h4>
+		<p>Doki Doki Literature Club is a visual novel game. Therefore, its gameplay has low level of interactivity and consists of scenes with statis 2D images of characters in a first-person perspective. <a href="https://ddlc.moe/">The website</a> is the main page of the game. It offers a small video as descrition, quickly followed by the <a href="https://teamsalvato.itch.io/ddlc/purchase?popup=1">download link</a>, a <a href="https://ddlc.moe/#:~:text=original%20game%20below...-,Hi%2C%20Monika%20here!,-Welcome%20to%20the">couple of words</a> from Monika- the main character and some more niche information. </p>
+		<p>
+			<a href="https://ddlc.moe/">
+			<img src="joinus.jpg" alt="GO TO THE WEBSITE" class="center" style="width:50px;height:80px;">
+			</a>
+		</p>
+		</div>
+
+<!--Text based question-->
+	<form action="index.php" name= "My Form" method="POST">
+		<div>
+		<label for="fname">Username: </label><input type="text" id="fname" name="fname"><br>
+		</div>
+<!--Drop down single choice-->
+		<div>
+		<label for="gender">What is your gender?</label>
+		<select id="gender" name="gender">
+			<option value="man">Man</option>
+			<option value="woman">Woman</option>
+			<option value="nonbinary">Non binary</option>
+			<option value="other">Other</option>
+		</select>
+		</div>
+
+<!--Text based question again-->
+		<div>
+		<label for="explanation">What strikes you the most about this sales website?</label>
+		<input type="text" id="explanation" style="height: 50px" name="explanation"><br>
+		</div>
+
+<!--1 choice based question, radio-->
+		
+		<div>
+		<p>Do you think having all information in one place is a good ideas?</p>
+		<input type="radio" id="yes" name="choice" value="Yes">
+		<label for="yes">Yes</label><br>
+		<input type="radio" id="no" name="choice" value="No">
+		<label for="no">No</label><br>
+		<input type="radio" id="maybe" name="choice" value="Maybe">
+		<label for="maybe">Maybe</label><br>
+		</div>
+
+	
+		<div>
+		What do you like about the sales website?<br>
+		<input type="checkbox" name="The Fonts" value="thefonts">The Fonts<br>
+		<input type="checkbox" name="The Colours" value="thecolours">The Colours<br>
+		<input type="checkbox" name="The Information" value="theinformation">The Information<br>
+		<input type="checkbox" name="The Buttons" value="thebuttons">The Buttons<br>
+		<input type="checkbox" name="The Payment Option" value="thepaymentoption">The Payment Option<br>
+		</div>
+<!--Comments-->
+		<div>
+		<label for="comments">Any additional comments for the website?</label>
+		<input type="text" id="comments" style="height: 50px" name="comments"><br>
+		</div>
+<!--The Sumit button-->
+		<div>
+			<input type="submit" value="Submit">
+		
+		</div>
+<!--Website Author-->
+		<div>
+			<p>Website designed by Kheswari Gukhool</p>
+		</div>
+	</form>
+	</body>
+</html>
